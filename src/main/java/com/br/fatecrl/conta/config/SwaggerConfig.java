@@ -15,8 +15,8 @@ public class SwaggerConfig {
 	OpenAPI getOpenAPIConfig() {
 		OpenAPI openApi = new OpenAPI();
 		Contact contact = new Contact()
-						.name("Prof. Diego Neri")
-						.email("diego.felix@fatec.sp.gov.br");
+						.name("Dominike Righi")
+						.email("dominike.santos@fatec.sp.gov.br");
 							
 		License license = new License()
 								.name("Apache 2.0")
@@ -30,15 +30,15 @@ public class SwaggerConfig {
 		return openApi.info(info);
 	}
 	
-//  OpenAPI financasOpenAPI() {
-//     return new OpenAPI().info(new Info()
-//        .title("API do Projeto Finanças da FATEC")
-//        .description("Esta API é utilizada na disciplina Desenvolvimento para Servidores-II")
-//        .version("v0.0.1")
-//        .contact(new Contact()
-//          .name("Diego Neri de Souza Felix").email("diego@diegoneri.com"))
-//        .license(new License()
-//          .name("Apache 2.0").url("http://springdoc.org")));
-//  }
+	OpenAPI financasOpenAPI() {
+		return new OpenAPI().info(new Info()
+			.title("API do Projeto Finanças da FATEC")
+			.description("Esta API é utilizada na disciplina Desenvolvimento para Servidores-II")
+			.version("v0.0.1")
+			.contact(new Contact()
+			.name("Profº Diego Neri de Souza Felix").email("diego@diegoneri.com"))
+			.license(new License()
+			.name("Apache 2.0").url("http://springdoc.org")));
+	}
 	
 }
